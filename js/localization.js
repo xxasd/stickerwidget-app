@@ -13,7 +13,8 @@ const translations = {
     calendarIntegrationDesc: "Stay organized with seamless calendar synchronization",
     customClocksTitle: "Custom Clocks",
     customClocksDesc: "Personalize time display with multiple elegant clock faces",
-    downloadNote: "Free to download • No ads • Privacy focused"
+    downloadNote: "Free to download • No ads • Privacy focused",
+    appStoreUrl: "https://apps.apple.com/us/app/little-sticker/id6748522892"
   },
   "zh-CN": {
     title: "小贴纸 🩹",
@@ -29,7 +30,8 @@ const translations = {
     calendarIntegrationDesc: "无缝同步日历，保持井井有条",
     customClocksTitle: "个性化时钟",
     customClocksDesc: "多种优雅表盘，随心定制时间显示",
-    downloadNote: "免费下载 • 无广告 • 隐私至上"
+    downloadNote: "免费下载 • 无广告 • 隐私至上",
+    appStoreUrl: "https://apps.apple.com/cn/app/little-sticker/id6748522892"
   },
   "zh-TW": {
     title: "小貼紙 🩹",
@@ -45,7 +47,8 @@ const translations = {
     calendarIntegrationDesc: "無縫同步日曆，保持井井有條",
     customClocksTitle: "個性化時鐘",
     customClocksDesc: "多種優雅錶盤，隨心定制時間顯示",
-    downloadNote: "免費下載 • 無廣告 • 隱私至上"
+    downloadNote: "免費下載 • 無廣告 • 隱私至上",
+    appStoreUrl: "https://apps.apple.com/tw/app/little-sticker/id6748522892"
   },
   ja: {
     title: "Little Sticker 🩹",
@@ -61,7 +64,8 @@ const translations = {
     calendarIntegrationDesc: "シームレスなカレンダー同期で整理整頓",
     customClocksTitle: "カスタム時計",
     customClocksDesc: "複数のエレガントな時計盤で時間をパーソナライズ",
-    downloadNote: "無料ダウンロード • 広告なし • プライバシー重視"
+    downloadNote: "無料ダウンロード • 広告なし • プライバシー重視",
+    appStoreUrl: "https://apps.apple.com/jp/app/little-sticker/id6748522892"
   },
   ko: {
     title: "Little Sticker 🩹",
@@ -77,7 +81,8 @@ const translations = {
     calendarIntegrationDesc: "원활한 캘린더 동기화로 일정을 관리하세요",
     customClocksTitle: "커스텀 시계",
     customClocksDesc: "다양한 우아한 시계 페이스로 시간을 꾸며보세요",
-    downloadNote: "무료 다운로드 • 광고 없음 • 개인정보 보호"
+    downloadNote: "무료 다운로드 • 광고 없음 • 개인정보 보호",
+    appStoreUrl: "https://apps.apple.com/kr/app/little-sticker/id6748522892"
   },
   de: {
     title: "Little Sticker 🩹",
@@ -93,7 +98,8 @@ const translations = {
     calendarIntegrationDesc: "Bleib organisiert mit nahtloser Kalender-Synchronisation",
     customClocksTitle: "Individuelle Uhren",
     customClocksDesc: "Personalisiere die Zeitanzeige mit mehreren eleganten Zifferblättern",
-    downloadNote: "Kostenlos herunterladen • Keine Werbung • Datenschutzorientiert"
+    downloadNote: "Kostenlos herunterladen • Keine Werbung • Datenschutzorientiert",
+    appStoreUrl: "https://apps.apple.com/de/app/little-sticker/id6748522892"
   }
 };
 
@@ -151,6 +157,12 @@ function updateContent(lang) {
       }
     }
   });
+
+  // Update App Store link
+  const appStoreButton = document.querySelector('.app-store-button');
+  if (appStoreButton && t.appStoreUrl) {
+    appStoreButton.href = t.appStoreUrl;
+  }
 
   document.documentElement.lang = lang;
 }
