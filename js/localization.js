@@ -14,7 +14,13 @@ const translations = {
     customClocksTitle: "Custom Clocks",
     customClocksDesc: "Personalize time display with multiple elegant clock faces",
     downloadNote: "Free to download • No ads • Privacy focused",
-    appStoreUrl: "https://apps.apple.com/us/app/little-sticker/id6748522892"
+    appStoreUrl: "https://apps.apple.com/us/app/little-sticker/id6748522892",
+    metaDescription: "Little Sticker - Transform your Home Screen with beautiful countdowns, elegant clocks, smart calendars, and personal photo widgets. Available across all your Apple devices.",
+    metaKeywords: "widgets, countdown, clock, calendar, photo widget, ios widgets, home screen customization",
+    ogTitle: "Little Sticker 🩹 - Stunning Widgets for Your Home Screen",
+    ogDescription: "Beautiful countdowns, elegant clocks, and smart calendar widgets for your iPhone, iPad, and Mac.",
+    twitterTitle: "Little Sticker 🩹 - Stunning Widgets for Your Home Screen",
+    twitterDescription: "Beautiful countdowns, elegant clocks, and smart calendar widgets for your iPhone, iPad, and Mac."
   },
   "zh-CN": {
     title: "小贴纸 🩹",
@@ -31,7 +37,13 @@ const translations = {
     customClocksTitle: "个性化时钟",
     customClocksDesc: "多种优雅表盘，随心定制时间显示",
     downloadNote: "免费下载 • 无广告 • 隐私至上",
-    appStoreUrl: "https://apps.apple.com/cn/app/little-sticker/id6748522892"
+    appStoreUrl: "https://apps.apple.com/cn/app/little-sticker/id6748522892",
+    metaDescription: "小贴纸 - 用精美的倒计时、优雅的时钟、智能日历和个性化照片小组件装点你的主屏幕。支持所有 Apple 设备。",
+    metaKeywords: "小组件, 倒计时, 时钟, 日历, 照片小组件, iOS 小组件, 主屏幕定制",
+    ogTitle: "小贴纸 🩹 - 让你的主屏幕焕然一新",
+    ogDescription: "为你的 iPhone、iPad 和 Mac 提供精美的倒计时、优雅的时钟和智能日历小组件。",
+    twitterTitle: "小贴纸 🩹 - 让你的主屏幕焕然一新",
+    twitterDescription: "为你的 iPhone、iPad 和 Mac 提供精美的倒计时、优雅的时钟和智能日历小组件。"
   },
   "zh-TW": {
     title: "小貼紙 🩹",
@@ -48,7 +60,13 @@ const translations = {
     customClocksTitle: "個性化時鐘",
     customClocksDesc: "多種優雅錶盤，隨心定制時間顯示",
     downloadNote: "免費下載 • 無廣告 • 隱私至上",
-    appStoreUrl: "https://apps.apple.com/tw/app/little-sticker/id6748522892"
+    appStoreUrl: "https://apps.apple.com/tw/app/little-sticker/id6748522892",
+    metaDescription: "小貼紙 - 用精美的倒數計時、優雅的時鐘、智能日曆和個性化照片小工具裝點你的主畫面。支援所有 Apple 裝置。",
+    metaKeywords: "小工具, 倒數計時, 時鐘, 日曆, 照片小工具, iOS 小工具, 主畫面定制",
+    ogTitle: "小貼紙 🩹 - 讓你的主畫面煥然一新",
+    ogDescription: "為你的 iPhone、iPad 和 Mac 提供精美的倒數計時、優雅的時鐘和智能日曆小工具。",
+    twitterTitle: "小貼紙 🩹 - 讓你的主畫面煥然一新",
+    twitterDescription: "為你的 iPhone、iPad 和 Mac 提供精美的倒數計時、優雅的時鐘和智能日曆小工具。"
   },
   ja: {
     title: "Little Sticker 🩹",
@@ -65,7 +83,13 @@ const translations = {
     customClocksTitle: "カスタム時計",
     customClocksDesc: "複数のエレガントな時計盤で時間をパーソナライズ",
     downloadNote: "無料ダウンロード • 広告なし • プライバシー重視",
-    appStoreUrl: "https://apps.apple.com/jp/app/little-sticker/id6748522892"
+    appStoreUrl: "https://apps.apple.com/jp/app/little-sticker/id6748522892",
+    metaDescription: "Little Sticker - 美しいカウントダウン、エレガントな時計、スマートなカレンダー、個人的な写真ウィジェットでホーム画面を変身させましょう。すべてのAppleデバイスで利用可能です。",
+    metaKeywords: "ウィジェット, カウントダウン, 時計, カレンダー, 写真ウィジェット, iOSウィジェット, ホーム画面カスタマイズ",
+    ogTitle: "Little Sticker 🩹 - ホーム画面をもっと素敵に",
+    ogDescription: "iPhone、iPad、Mac向けの美しいカウントダウン、エレガントな時計、スマートなカレンダーウィジェット。",
+    twitterTitle: "Little Sticker 🩹 - ホーム画面をもっと素敵に",
+    twitterDescription: "iPhone、iPad、Mac向けの美しいカウントダウン、エレガントな時計、スマートなカレンダーウィジェット。"
   },
   ko: {
     title: "Little Sticker 🩹",
@@ -82,7 +106,13 @@ const translations = {
     customClocksTitle: "커스텀 시계",
     customClocksDesc: "다양한 우아한 시계 페이스로 시간을 꾸며보세요",
     downloadNote: "무료 다운로드 • 광고 없음 • 개인정보 보호",
-    appStoreUrl: "https://apps.apple.com/kr/app/little-sticker/id6748522892"
+    appStoreUrl: "https://apps.apple.com/kr/app/little-sticker/id6748522892",
+    metaDescription: "Little Sticker - 아름다운 카운트다운, 우아한 시계, 스마트 캘린더, 개인 사진 위젯으로 홈 화면을 꾸며보세요. 모든 Apple 기기에서 사용 가능합니다.",
+    metaKeywords: "위젯, 카운트다운, 시계, 캘린더, 사진 위젯, iOS 위젯, 홈 화면 꾸미기",
+    ogTitle: "Little Sticker 🩹 - 홈 화면을 더욱 아름답게",
+    ogDescription: "iPhone, iPad, Mac을 위한 아름다운 카운트다운, 우아한 시계, 스마트 캘린더 위젯.",
+    twitterTitle: "Little Sticker 🩹 - 홈 화면을 더욱 아름답게",
+    twitterDescription: "iPhone, iPad, Mac을 위한 아름다운 카운트다운, 우아한 시계, 스마트 캘린더 위젯."
   },
   de: {
     title: "Little Sticker 🩹",
@@ -99,7 +129,13 @@ const translations = {
     customClocksTitle: "Individuelle Uhren",
     customClocksDesc: "Personalisiere die Zeitanzeige mit mehreren eleganten Zifferblättern",
     downloadNote: "Kostenlos herunterladen • Keine Werbung • Datenschutzorientiert",
-    appStoreUrl: "https://apps.apple.com/de/app/little-sticker/id6748522892"
+    appStoreUrl: "https://apps.apple.com/de/app/little-sticker/id6748522892",
+    metaDescription: "Little Sticker - Verwandle deinen Home-Bildschirm mit wunderschönen Countdowns, eleganten Uhren, intelligenten Kalendern und persönlichen Foto-Widgets. Verfügbar auf allen deinen Apple-Geräten.",
+    metaKeywords: "widgets, countdown, uhr, kalender, foto-widget, ios widgets, home-bildschirm anpassung",
+    ogTitle: "Little Sticker 🩹 - Atemberaubende Widgets für deinen Home-Bildschirm",
+    ogDescription: "Wunderschöne Countdowns, elegante Uhren und intelligente Kalender-Widgets für dein iPhone, iPad und Mac.",
+    twitterTitle: "Little Sticker 🩹 - Atemberaubende Widgets für deinen Home-Bildschirm",
+    twitterDescription: "Wunderschöne Countdowns, elegante Uhren und intelligente Kalender-Widgets für dein iPhone, iPad and Mac."
   }
 };
 
@@ -158,6 +194,15 @@ function updateContent(lang) {
     }
   });
 
+  // Update Meta Tags (SEO)
+  document.querySelectorAll('[data-i18n-meta]').forEach(element => {
+    const key = element.getAttribute('data-i18n-meta');
+    const translationKey = mapMetaKeyToTranslationKey(key);
+    if (t[translationKey]) {
+      element.setAttribute('content', t[translationKey]);
+    }
+  });
+
   // Update App Store link
   const appStoreButton = document.querySelector('.app-store-button');
   if (appStoreButton && t.appStoreUrl) {
@@ -165,6 +210,18 @@ function updateContent(lang) {
   }
 
   document.documentElement.lang = lang;
+}
+
+function mapMetaKeyToTranslationKey(metaKey) {
+  const map = {
+    'description': 'metaDescription',
+    'keywords': 'metaKeywords',
+    'og:title': 'ogTitle',
+    'og:description': 'ogDescription',
+    'twitter:title': 'twitterTitle',
+    'twitter:description': 'twitterDescription'
+  };
+  return map[metaKey] || metaKey;
 }
 
 function updateSwitcherUI(currentLang) {
