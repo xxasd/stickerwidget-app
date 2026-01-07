@@ -139,7 +139,7 @@
 
         <!-- Download Section -->
         <div class="download-section">
-          <a href="https://apps.apple.com/us/app/little-sticker/id6748522892" target="_blank" class="app-store-button">
+          <a href="https://apps.apple.com/us/app/little-sticker/id6748522892" class="app-store-button">
             <img
               src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=120x40&releaseDate=1662940800"
               alt="Download on the App Store" class="app-store-img" />
@@ -822,12 +822,14 @@
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.85);
-      z-index: 9999;
+      z-index: 2147483647; /* Ensure highest z-index */
       display: flex;
       justify-content: flex-end;
       padding: 20px;
       backdrop-filter: blur(5px);
       -webkit-backdrop-filter: blur(5px);
+      /* Prevent touch actions on guide to avoid scrolling/zooming through it */
+      touch-action: none;
     }
 
     .guide-content {
@@ -835,6 +837,7 @@
       color: white;
       margin-top: 10px;
       margin-right: 10px;
+      pointer-events: auto;
     }
 
     .guide-arrow {
@@ -869,10 +872,31 @@
 
   <script src="js/localization.js"></script>
   <script>
+    // Prevent Zoom on iOS
+    // iOS Safari 10+ ignores meta viewport user-scalable=no, so we need JS intervetion
+    (function() {
+      // Prevent gesture zoom (two finger pinch)
+      document.addEventListener('gesturestart', function(e) {
+        e.preventDefault();
+      });
+
+      // Prevent double tap zoom
+      let lastTouchEnd = 0;
+      document.addEventListener('touchend', function(event) {
+        const now = (new Date()).getTime();
+        if (now - lastTouchEnd <= 300) {
+          event.preventDefault();
+        }
+        lastTouchEnd = now;
+      }, false);
+    })();
+
     // WeChat Detection and Handling
     (function() {
-      try {
-        document.addEventListener('DOMContentLoaded', () => {
+      // Helper to init WeChat logic
+      function initWeChatGuide() {
+        try {
+          // Check for MicroMessenger (WeChat) in User Agent
           const isWeChat = /MicroMessenger/i.test(navigator.userAgent);
           
           if (isWeChat) {
@@ -880,21 +904,40 @@
             const guide = document.getElementById('wechat-guide');
             
             if (downloadBtn && guide) {
-              downloadBtn.addEventListener('click', (e) => {
+              // Use both click and touchend to ensure it catches the event on all devices
+              const showGuide = (e) => {
+                // Only prevent default if it's the app store link
+                // Bubbling might occur, so we just stop it here
                 e.preventDefault();
+                e.stopPropagation();
                 guide.style.display = 'flex';
-                // Ensure z-index is highest
-                guide.style.zIndex = '2147483647';
-              });
+              };
+
+              downloadBtn.addEventListener('click', showGuide);
+              // Adding touchend might trigger twice or conflict with click on some devices,
+              // but since we preventDefault in the handler, it should be fine.
+              // However, click is usually sufficient. Let's stick to click but make sure logic is sound.
               
-              guide.addEventListener('click', () => {
+              guide.addEventListener('click', (e) => {
+                e.preventDefault();
                 guide.style.display = 'none';
               });
+              
+              // Also prevent touchmove on guide to stop scrolling background
+              guide.addEventListener('touchmove', (e) => {
+                e.preventDefault();
+              }, { passive: false });
             }
           }
-        });
-      } catch (e) {
-        console.error('WeChat guide initialization failed:', e);
+        } catch (e) {
+          console.error('WeChat guide initialization failed:', e);
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initWeChatGuide);
+      } else {
+        initWeChatGuide();
       }
     })();
   </script>
