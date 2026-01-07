@@ -147,6 +147,8 @@
           <p class="download-note" data-i18n="downloadNote">
             Free to download • No ads • Privacy focused
           </p>
+
+          <p class="test-text">test</p>
         </div>
       </div>
     </header>
@@ -871,7 +873,6 @@
   <script>
     // WeChat Detection and Handling
     document.addEventListener('DOMContentLoaded', () => {
-      alert("xx", navigator.userAgent)
       const isWeChat = /MicroMessenger/i.test(navigator.userAgent);
       
       if (isWeChat) {
@@ -881,6 +882,7 @@
         if (downloadBtn && guide) {
           downloadBtn.addEventListener('click', (e) => {
             e.preventDefault();
+            document.querySelector('.test-text').innerHTML = "test:" + navigator.userAgent
             guide.style.display = 'flex';
           });
           
