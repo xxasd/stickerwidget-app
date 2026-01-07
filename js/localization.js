@@ -20,7 +20,8 @@ const translations = {
     ogTitle: "Little Sticker 🩹 - Stunning Widgets for Your Home Screen",
     ogDescription: "Beautiful countdowns, elegant clocks, and smart calendar widgets for your iPhone, iPad, and Mac.",
     twitterTitle: "Little Sticker 🩹 - Stunning Widgets for Your Home Screen",
-    twitterDescription: "Beautiful countdowns, elegant clocks, and smart calendar widgets for your iPhone, iPad, and Mac."
+    twitterDescription: "Beautiful countdowns, elegant clocks, and smart calendar widgets for your iPhone, iPad, and Mac.",
+    openInSafari: "Tap the menu and select<br>\"Open in Safari\" to download"
   },
   "zh-CN": {
     title: "小贴纸 🩹",
@@ -43,7 +44,8 @@ const translations = {
     ogTitle: "小贴纸 🩹 - 让你的主屏幕焕然一新",
     ogDescription: "为你的 iPhone、iPad 和 Mac 提供精美的倒计时、优雅的时钟和智能日历小组件。",
     twitterTitle: "小贴纸 🩹 - 让你的主屏幕焕然一新",
-    twitterDescription: "为你的 iPhone、iPad 和 Mac 提供精美的倒计时、优雅的时钟和智能日历小组件。"
+    twitterDescription: "为你的 iPhone、iPad 和 Mac 提供精美的倒计时、优雅的时钟和智能日历小组件。",
+    openInSafari: "点击右上角菜单<br>选择“在 Safari 中打开”以继续"
   },
   "zh-TW": {
     title: "小貼紙 🩹",
@@ -66,7 +68,8 @@ const translations = {
     ogTitle: "小貼紙 🩹 - 讓你的主畫面煥然一新",
     ogDescription: "為你的 iPhone、iPad 和 Mac 提供精美的倒數計時、優雅的時鐘和智能日曆小工具。",
     twitterTitle: "小貼紙 🩹 - 讓你的主畫面煥然一新",
-    twitterDescription: "為你的 iPhone、iPad 和 Mac 提供精美的倒數計時、優雅的時鐘和智能日曆小工具。"
+    twitterDescription: "為你的 iPhone、iPad 和 Mac 提供精美的倒數計時、優雅的時鐘和智能日曆小工具。",
+    openInSafari: "點擊右上角選單<br>選擇「在 Safari 中開啟」以繼續"
   },
   ja: {
     title: "Little Sticker 🩹",
@@ -89,7 +92,8 @@ const translations = {
     ogTitle: "Little Sticker 🩹 - ホーム画面をもっと素敵に",
     ogDescription: "iPhone、iPad、Mac向けの美しいカウントダウン、エレガントな時計、スマートなカレンダーウィジェット。",
     twitterTitle: "Little Sticker 🩹 - ホーム画面をもっと素敵に",
-    twitterDescription: "iPhone、iPad、Mac向けの美しいカウントダウン、エレガントな時計、スマートなカレンダーウィジェット。"
+    twitterDescription: "iPhone、iPad、Mac向けの美しいカウントダウン、エレガントな時計、スマートなカレンダーウィジェット。",
+    openInSafari: "右上のメニューをタップし<br>「Safariで開く」を選択してください"
   },
   ko: {
     title: "Little Sticker 🩹",
@@ -112,7 +116,8 @@ const translations = {
     ogTitle: "Little Sticker 🩹 - 홈 화면을 더욱 아름답게",
     ogDescription: "iPhone, iPad, Mac을 위한 아름다운 카운트다운, 우아한 시계, 스마트 캘린더 위젯.",
     twitterTitle: "Little Sticker 🩹 - 홈 화면을 더욱 아름답게",
-    twitterDescription: "iPhone, iPad, Mac을 위한 아름다운 카운트다운, 우아한 시계, 스마트 캘린더 위젯."
+    twitterDescription: "iPhone, iPad, Mac을 위한 아름다운 카운트다운, 우아한 시계, 스마트 캘린더 위젯.",
+    openInSafari: "오른쪽 상단 메뉴를 탭하고<br>\"Safari에서 열기\"를 선택하세요"
   },
   de: {
     title: "Little Sticker 🩹",
@@ -135,7 +140,8 @@ const translations = {
     ogTitle: "Little Sticker 🩹 - Atemberaubende Widgets für deinen Home-Bildschirm",
     ogDescription: "Wunderschöne Countdowns, elegante Uhren und intelligente Kalender-Widgets für dein iPhone, iPad und Mac.",
     twitterTitle: "Little Sticker 🩹 - Atemberaubende Widgets für deinen Home-Bildschirm",
-    twitterDescription: "Wunderschöne Countdowns, elegante Uhren und intelligente Kalender-Widgets für dein iPhone, iPad and Mac."
+    twitterDescription: "Wunderschöne Countdowns, elegante Uhren und intelligente Kalender-Widgets für dein iPhone, iPad and Mac.",
+    openInSafari: "Tippe auf das Menü und<br>wähle „In Safari öffnen“"
   }
 };
 
