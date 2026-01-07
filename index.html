@@ -4,7 +4,7 @@
 <head>
   <title data-i18n="title">Little Sticker 🩹</title>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#6366f1" />
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f0f23" />
   
@@ -870,25 +870,33 @@
   <script src="js/localization.js"></script>
   <script>
     // WeChat Detection and Handling
-    document.addEventListener('DOMContentLoaded', () => {
-      const isWeChat = /MicroMessenger/i.test(navigator.userAgent);
-      
-      if (isWeChat) {
-        const downloadBtn = document.querySelector('.app-store-button');
-        const guide = document.getElementById('wechat-guide');
-        
-        if (downloadBtn && guide) {
-          downloadBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            guide.style.display = 'flex';
-          });
+    (function() {
+      try {
+        document.addEventListener('DOMContentLoaded', () => {
+          const isWeChat = /MicroMessenger/i.test(navigator.userAgent);
           
-          guide.addEventListener('click', () => {
-            guide.style.display = 'none';
-          });
-        }
+          if (isWeChat) {
+            const downloadBtn = document.querySelector('.app-store-button');
+            const guide = document.getElementById('wechat-guide');
+            
+            if (downloadBtn && guide) {
+              downloadBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                guide.style.display = 'flex';
+                // Ensure z-index is highest
+                guide.style.zIndex = '2147483647';
+              });
+              
+              guide.addEventListener('click', () => {
+                guide.style.display = 'none';
+              });
+            }
+          }
+        });
+      } catch (e) {
+        console.error('WeChat guide initialization failed:', e);
       }
-    });
+    })();
   </script>
 </body>
 
