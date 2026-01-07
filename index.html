@@ -822,14 +822,12 @@
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.85);
-      z-index: 2147483647; /* Ensure highest z-index */
+      z-index: 9999;
       display: flex;
       justify-content: flex-end;
       padding: 20px;
       backdrop-filter: blur(5px);
       -webkit-backdrop-filter: blur(5px);
-      /* Prevent touch actions on guide to avoid scrolling/zooming through it */
-      touch-action: none;
     }
 
     .guide-content {
@@ -837,7 +835,6 @@
       color: white;
       margin-top: 10px;
       margin-right: 10px;
-      pointer-events: auto;
     }
 
     .guide-arrow {
@@ -872,31 +869,11 @@
 
   <script src="js/localization.js"></script>
   <script>
-    // Prevent Zoom on iOS
-    // iOS Safari 10+ ignores meta viewport user-scalable=no, so we need JS intervetion
-    (function() {
-      // Prevent gesture zoom (two finger pinch)
-      document.addEventListener('gesturestart', function(e) {
-        e.preventDefault();
-      });
-
-      // Prevent double tap zoom
-      let lastTouchEnd = 0;
-      document.addEventListener('touchend', function(event) {
-        const now = (new Date()).getTime();
-        if (now - lastTouchEnd <= 300) {
-          event.preventDefault();
-        }
-        lastTouchEnd = now;
-      }, false);
-    })();
-
     // WeChat Detection and Handling
     (function() {
-      // Helper to init WeChat logic
-      function initWeChatGuide() {
-        try {
-          // Check for MicroMessenger (WeChat) in User Agent
+      try {
+        document.addEventListener('DOMContentLoaded', () => {
+          alert("xx", navigator.userAgent)
           const isWeChat = /MicroMessenger/i.test(navigator.userAgent);
           
           if (isWeChat) {
@@ -904,40 +881,21 @@
             const guide = document.getElementById('wechat-guide');
             
             if (downloadBtn && guide) {
-              // Use both click and touchend to ensure it catches the event on all devices
-              const showGuide = (e) => {
-                // Only prevent default if it's the app store link
-                // Bubbling might occur, so we just stop it here
+              downloadBtn.addEventListener('click', (e) => {
                 e.preventDefault();
-                e.stopPropagation();
                 guide.style.display = 'flex';
-              };
-
-              downloadBtn.addEventListener('click', showGuide);
-              // Adding touchend might trigger twice or conflict with click on some devices,
-              // but since we preventDefault in the handler, it should be fine.
-              // However, click is usually sufficient. Let's stick to click but make sure logic is sound.
-              
-              guide.addEventListener('click', (e) => {
-                e.preventDefault();
-                guide.style.display = 'none';
+                // Ensure z-index is highest
+                guide.style.zIndex = '2147483647';
               });
               
-              // Also prevent touchmove on guide to stop scrolling background
-              guide.addEventListener('touchmove', (e) => {
-                e.preventDefault();
-              }, { passive: false });
+              guide.addEventListener('click', () => {
+                guide.style.display = 'none';
+              });
             }
           }
-        } catch (e) {
-          console.error('WeChat guide initialization failed:', e);
-        }
-      }
-
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initWeChatGuide);
-      } else {
-        initWeChatGuide();
+        });
+      } catch (e) {
+        console.error('WeChat guide initialization failed:', e);
       }
     })();
   </script>
