@@ -3,7 +3,7 @@ name: Auto Deploy
 on:
   push:
     branches:
-      - main  # 推 main 分支自动部署
+      - gh-pages  # 推 gh-pages 分支自动部署
 
 jobs:
   deploy:
@@ -23,5 +23,5 @@ jobs:
         script: |
           cd /data/webroot/littlesticker
           git fetch --all
-          git reset --hard origin/main
+          git reset --hard origin/gh-pages
           git clean -fd
