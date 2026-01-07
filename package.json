@@ -1,0 +1,14 @@
+{
+  "name": "stickerwidget-app",
+  "version": "1.0.0",
+  "description": "Little Sticker App Website",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "html-minifier-terser": "^7.2.0",
+    "javascript-obfuscator": "^4.1.0"
+  }
+}
+
