@@ -22,5 +22,6 @@ jobs:
         port: 22
         script: |
           cd /data/webroot/littlesticker
-          git reset --hard
-          git pull origin main
+          git fetch --all
+          git reset --hard origin/main
+          git clean -fd
