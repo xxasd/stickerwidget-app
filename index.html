@@ -870,34 +870,26 @@
   <script src="js/localization.js"></script>
   <script>
     // WeChat Detection and Handling
-    (function() {
-      try {
-        document.addEventListener('DOMContentLoaded', () => {
-          alert("xx", navigator.userAgent)
-          const isWeChat = /MicroMessenger/i.test(navigator.userAgent);
+    document.addEventListener('DOMContentLoaded', () => {
+      alert("xx", navigator.userAgent)
+      const isWeChat = /MicroMessenger/i.test(navigator.userAgent);
+      
+      if (isWeChat) {
+        const downloadBtn = document.querySelector('.app-store-button');
+        const guide = document.getElementById('wechat-guide');
+        
+        if (downloadBtn && guide) {
+          downloadBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            guide.style.display = 'flex';
+          });
           
-          if (isWeChat) {
-            const downloadBtn = document.querySelector('.app-store-button');
-            const guide = document.getElementById('wechat-guide');
-            
-            if (downloadBtn && guide) {
-              downloadBtn.addEventListener('click', (e) => {
-                e.preventDefault();
-                guide.style.display = 'flex';
-                // Ensure z-index is highest
-                guide.style.zIndex = '2147483647';
-              });
-              
-              guide.addEventListener('click', () => {
-                guide.style.display = 'none';
-              });
-            }
-          }
-        });
-      } catch (e) {
-        console.error('WeChat guide initialization failed:', e);
+          guide.addEventListener('click', () => {
+            guide.style.display = 'none';
+          });
+        }
       }
-    })();
+    });
   </script>
 </body>
 
