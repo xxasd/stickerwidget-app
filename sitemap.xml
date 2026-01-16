@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://littlesticker.amile.top/</loc>
+    <lastmod>2026-01-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="http://littlesticker.amile.top/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="http://littlesticker.amile.top/?lang=zh-CN" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="http://littlesticker.amile.top/?lang=zh-TW" />
+    <xhtml:link rel="alternate" hreflang="ja" href="http://littlesticker.amile.top/?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="ko" href="http://littlesticker.amile.top/?lang=ko" />
+    <xhtml:link rel="alternate" hreflang="de" href="http://littlesticker.amile.top/?lang=de" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="http://littlesticker.amile.top/" />
+  </url>
+</urlset>

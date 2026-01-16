@@ -1,6 +1,6 @@
 const translations = {
   en: {
-    title: "Little Sticker 🩹",
+    title: "Little Sticker 🩹 - Beautiful Widgets for iPhone, iPad & Mac",
     greeting: "Hey there!",
     heroTitle: "Make your widgets <span class=\"highlight\">absolutely stunning</span>",
     heroSubtitle: "Transform your Home Screen with beautiful countdowns, elegant clocks, smart calendars, and personal photo widgets. Available across all your Apple devices.",
@@ -13,18 +13,20 @@ const translations = {
     calendarIntegrationDesc: "Stay organized with seamless calendar synchronization",
     customClocksTitle: "Custom Clocks",
     customClocksDesc: "Personalize time display with multiple elegant clock faces",
+    featuresHeading: "Powerful Widget Features",
+    downloadHeading: "Get Started Today",
     downloadNote: "Free to download • No ads • Privacy focused",
     appStoreUrl: "https://apps.apple.com/us/app/little-sticker/id6748522892",
-    metaDescription: "Little Sticker - Transform your Home Screen with beautiful countdowns, elegant clocks, smart calendars, and personal photo widgets. Available across all your Apple devices.",
+    metaDescription: "Transform your Home Screen with beautiful countdown timers, elegant clock widgets, smart calendar integration and personal photo displays for iPhone, iPad and Mac. Free download.",
     metaKeywords: "widgets, countdown, clock, calendar, photo widget, ios widgets, home screen customization",
     ogTitle: "Little Sticker 🩹 - Stunning Widgets for Your Home Screen",
     ogDescription: "Beautiful countdowns, elegant clocks, and smart calendar widgets for your iPhone, iPad, and Mac.",
     twitterTitle: "Little Sticker 🩹 - Stunning Widgets for Your Home Screen",
-    twitterDescription: "Beautiful countdowns, elegant clocks, and smart calendar widgets for your iPhone, iPad, and Mac.",
+    twitterDescription: "Beautiful countdown timers, elegant clocks, and smart calendar widgets for your iPhone, iPad, and Mac. Free to download with no ads.",
     openInSafari: "Tap the menu and select<br>\"Open in Safari\" to download"
   },
   "zh-CN": {
-    title: "小贴纸 🩹",
+    title: "小贴纸 🩹 - iPhone、iPad 和 Mac 的精美小组件",
     greeting: "你好！",
     heroTitle: "让你的小组件<span class=\"highlight\">焕然一新</span>",
     heroSubtitle: "用精美的倒计时、优雅的时钟、智能日历和个性化照片小组件装点你的主屏幕。支持所有 Apple 设备。",
@@ -37,6 +39,8 @@ const translations = {
     calendarIntegrationDesc: "无缝同步日历，保持井井有条",
     customClocksTitle: "个性化时钟",
     customClocksDesc: "多种优雅表盘，随心定制时间显示",
+    featuresHeading: "强大的小组件功能",
+    downloadHeading: "立即开始",
     downloadNote: "免费下载 • 无广告 • 隐私至上",
     appStoreUrl: "https://apps.apple.com/cn/app/little-sticker/id6748522892",
     metaDescription: "小贴纸 - 用精美的倒计时、优雅的时钟、智能日历和个性化照片小组件装点你的主屏幕。支持所有 Apple 设备。",
@@ -48,7 +52,7 @@ const translations = {
     openInSafari: "点击右上角菜单<br>选择“在 Safari 中打开”以继续"
   },
   "zh-TW": {
-    title: "小貼紙 🩹",
+    title: "小貼紙 🩹 - iPhone、iPad 和 Mac 的精美小工具",
     greeting: "你好！",
     heroTitle: "讓你的小工具<span class=\"highlight\">煥然一新</span>",
     heroSubtitle: "用精美的倒數計時、優雅的時鐘、智能日曆和個性化照片小工具裝點你的主畫面。支援所有 Apple 裝置。",
@@ -61,6 +65,8 @@ const translations = {
     calendarIntegrationDesc: "無縫同步日曆，保持井井有條",
     customClocksTitle: "個性化時鐘",
     customClocksDesc: "多種優雅錶盤，隨心定制時間顯示",
+    featuresHeading: "強大的小工具功能",
+    downloadHeading: "立即開始",
     downloadNote: "免費下載 • 無廣告 • 隱私至上",
     appStoreUrl: "https://apps.apple.com/tw/app/little-sticker/id6748522892",
     metaDescription: "小貼紙 - 用精美的倒數計時、優雅的時鐘、智能日曆和個性化照片小工具裝點你的主畫面。支援所有 Apple 裝置。",
@@ -72,7 +78,7 @@ const translations = {
     openInSafari: "點擊右上角選單<br>選擇「在 Safari 中開啟」以繼續"
   },
   ja: {
-    title: "Little Sticker 🩹",
+    title: "Little Sticker 🩹 - iPhone、iPad、Mac用の美しいウィジェット",
     greeting: "こんにちは！",
     heroTitle: "ウィジェットを<span class=\"highlight\">もっと素敵に</span>",
     heroSubtitle: "美しいカウントダウン、エレガントな時計、スマートなカレンダー、個人的な写真ウィジェットでホーム画面を変身させましょう。すべてのAppleデバイスで利用可能です。",
@@ -85,6 +91,8 @@ const translations = {
     calendarIntegrationDesc: "シームレスなカレンダー同期で整理整頓",
     customClocksTitle: "カスタム時計",
     customClocksDesc: "複数のエレガントな時計盤で時間をパーソナライズ",
+    featuresHeading: "強力なウィジェット機能",
+    downloadHeading: "今すぐ始める",
     downloadNote: "無料ダウンロード • 広告なし • プライバシー重視",
     appStoreUrl: "https://apps.apple.com/jp/app/little-sticker/id6748522892",
     metaDescription: "Little Sticker - 美しいカウントダウン、エレガントな時計、スマートなカレンダー、個人的な写真ウィジェットでホーム画面を変身させましょう。すべてのAppleデバイスで利用可能です。",
@@ -96,7 +104,7 @@ const translations = {
     openInSafari: "右上のメニューをタップし<br>「Safariで開く」を選択してください"
   },
   ko: {
-    title: "Little Sticker 🩹",
+    title: "Little Sticker 🩹 - iPhone, iPad, Mac을 위한 아름다운 위젯",
     greeting: "안녕하세요!",
     heroTitle: "위젯을 <span class=\"highlight\">더욱 아름답게</span>",
     heroSubtitle: "아름다운 카운트다운, 우아한 시계, 스마트 캘린더, 개인 사진 위젯으로 홈 화면을 꾸며보세요. 모든 Apple 기기에서 사용 가능합니다.",
@@ -109,6 +117,8 @@ const translations = {
     calendarIntegrationDesc: "원활한 캘린더 동기화로 일정을 관리하세요",
     customClocksTitle: "커스텀 시계",
     customClocksDesc: "다양한 우아한 시계 페이스로 시간을 꾸며보세요",
+    featuresHeading: "강력한 위젯 기능",
+    downloadHeading: "지금 시작하기",
     downloadNote: "무료 다운로드 • 광고 없음 • 개인정보 보호",
     appStoreUrl: "https://apps.apple.com/kr/app/little-sticker/id6748522892",
     metaDescription: "Little Sticker - 아름다운 카운트다운, 우아한 시계, 스마트 캘린더, 개인 사진 위젯으로 홈 화면을 꾸며보세요. 모든 Apple 기기에서 사용 가능합니다.",
@@ -120,7 +130,7 @@ const translations = {
     openInSafari: "오른쪽 상단 메뉴를 탭하고<br>\"Safari에서 열기\"를 선택하세요"
   },
   de: {
-    title: "Little Sticker 🩹",
+    title: "Little Sticker 🩹 - Wunderschöne Widgets für iPhone, iPad & Mac",
     greeting: "Hallo!",
     heroTitle: "Mach deine Widgets <span class=\"highlight\">einfach umwerfend</span>",
     heroSubtitle: "Verwandle deinen Home-Bildschirm mit wunderschönen Countdowns, eleganten Uhren, intelligenten Kalendern und persönlichen Foto-Widgets. Verfügbar auf allen deinen Apple-Geräten.",
@@ -133,6 +143,8 @@ const translations = {
     calendarIntegrationDesc: "Bleib organisiert mit nahtloser Kalender-Synchronisation",
     customClocksTitle: "Individuelle Uhren",
     customClocksDesc: "Personalisiere die Zeitanzeige mit mehreren eleganten Zifferblättern",
+    featuresHeading: "Leistungsstarke Widget-Funktionen",
+    downloadHeading: "Jetzt loslegen",
     downloadNote: "Kostenlos herunterladen • Keine Werbung • Datenschutzorientiert",
     appStoreUrl: "https://apps.apple.com/de/app/little-sticker/id6748522892",
     metaDescription: "Little Sticker - Verwandle deinen Home-Bildschirm mit wunderschönen Countdowns, eleganten Uhren, intelligenten Kalendern und persönlichen Foto-Widgets. Verfügbar auf allen deinen Apple-Geräten.",

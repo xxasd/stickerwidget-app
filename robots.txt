@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /js/
+Disallow: /img/
+
+Sitemap: http://littlesticker.amile.top/sitemap.xml
